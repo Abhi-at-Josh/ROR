@@ -6,7 +6,7 @@ count=0
 for i in 2..number/2
     if number%i==0
        count =count +1
-       print "the number is not prime nunber"
+       puts "The number is not prime nunber"
        break
     end
   end
