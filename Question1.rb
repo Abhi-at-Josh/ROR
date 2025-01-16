@@ -13,3 +13,4 @@ for i in 2..number/2
 if count==0
     puts "The given number is prime number"
 end
+
