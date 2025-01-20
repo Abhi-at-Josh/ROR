@@ -1,5 +1,5 @@
-require_relative 'Country_data'
-require_relative 'Module'
+require_relative 'country_data'
+require_relative 'module'
 
 class Country
   include Country_status
@@ -24,11 +24,11 @@ class Country
     puts "#----------------------------------#"
     puts "Name of Country:#{@country_name}"
     puts
-    puts "Will the country Win :#{ cuntry_will_win(@army_state,@gdp)}"
+    puts "Will the country Win :#{ country_will_win(@army_state,@gdp)}"
     puts
     puts "Will the country will get loan :#{ country_will_get_loan(@gdp,@state)}"
     puts
-    puts "Will have seat in UN security council :#{country_will_have_seat_in_UN(@army_state,@states)}"
+    puts "Will have seat in UN security council :#{country_will_have_seat_in_un(@army_state,@states)}"
     puts "#----------------------------------#"
   end
 
