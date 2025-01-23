@@ -2,16 +2,18 @@
 print "Enter the grade of student :"
 input=gets.chomp
 grade=input.to_i
-
-
+ELEMENTARY_SCHOOL = (1..5)
+MIDDLE_SCHOOL = (6..8)
+HIGH_SCHOOL = (9..12)
 if grade <=0
   puts "Invalide input"
-elsif grade>=1 && grade<=5
+elsif ELEMENTARY_SCHOOL.include?(grade)
   puts "The student is in Elementary School"
-elsif grade>=6 && grade<=8
+elsif MIDDLE_SCHOOL.include?(grade)
   puts "The student is in Middle School"
-elsif grade>=9 && grade<=12
+elsif HIGH_SCHOOL.include?(grade)
   puts"The student is in High School"
 else 
   puts "The student is in College"
 end
+
