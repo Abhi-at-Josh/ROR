@@ -4,12 +4,12 @@ input=gets.chomp
 number=input.to_i
 count=0
 for i in 2..number/2
-    if number%i==0
-       count =count +1
-       print "the number is not prime nunber"
-       break
-    end
+  if number%i==0
+    count =count +1
+    puts "The number is not prime nunber"
+    break
   end
+end
 if count==0
     puts "The given number is prime number"
 end
